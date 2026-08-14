@@ -6,9 +6,11 @@ export const projects = [
       "A modern and responsive personal portfolio built with Vue.js 3 and Vue Router.",
     image: "/images/projects/portfolio.png",
     technologies: ["Vue.js", "JavaScript", "HTML", "CSS"],
-    github: "https://github.com/YOUR_USERNAME/portfolio-vue",
-    demo: "#"
+    github: "https://github.com/iahsan-azam/ahsan-portfolio",
+    demo: "https://iahsan-azam.github.io/ahsan-portfolio/",
+    status: "Completed"
   },
+
   {
     id: 2,
     title: "School Management System",
@@ -16,9 +18,11 @@ export const projects = [
       "A web application for managing students, teachers, classes and attendance.",
     image: "/images/projects/school-management.png",
     technologies: ["Vue.js", "Node.js", "JavaScript"],
-    github: "https://github.com/YOUR_USERNAME/school-management",
-    demo: "#"
+    github: "",
+    demo: "#",
+    status: "In Progress"
   },
+
   {
     id: 3,
     title: "Landing Page",
@@ -26,7 +30,8 @@ export const projects = [
       "Responsive landing page with Vue Router and reusable Vue components.",
     image: "/images/projects/landing-page.png",
     technologies: ["Vue.js", "HTML", "CSS"],
-    github: "https://github.com/YOUR_USERNAME/landing-page",
-    demo: "#"
+    github: "",
+    demo: "#",
+    status: "In Progress"
   }
 ]

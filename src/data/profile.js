@@ -14,7 +14,7 @@ export const profile = {
   contact: {
     email: "iahsanazam@gmail.com",
     location: "Pakistan",
-    github: "https://github.com/YOUR_USERNAME",
+    github: "https://github.com/iahsan-azam",
     linkedin: "https://www.linkedin.com/in/ahsan-azam-6a8005365/"
   },
 

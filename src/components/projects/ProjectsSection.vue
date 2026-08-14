@@ -38,6 +38,19 @@
             <p class="text-slate-400 mb-4">
               {{ project.description }}
             </p>
+            <!-- Project Status -->
+<div class="mb-4">
+  <span
+    class="px-3 py-1 rounded-full text-sm"
+    :class="
+      project.status === 'Completed'
+        ? 'bg-green-500/20 text-green-400'
+        : 'bg-yellow-500/20 text-yellow-400'
+    "
+  >
+    {{ project.status }}
+  </span>
+</div>
 
             <div class="flex flex-wrap gap-2 mb-6">
               <span
@@ -60,13 +73,13 @@
               </a>
 
               <a
-                :href="project.demo"
-                target="_blank"
-                class="flex-1 text-center border border-cyan-400 py-2 rounded-lg hover:bg-cyan-400 hover:text-slate-950 transition"
-              >
-                Live Demo
-              </a>
-
+  v-if="project.demo && project.demo !== '#'"
+  :href="project.demo"
+  target="_blank"
+  class="flex-1 text-center border border-cyan-400 py-2 rounded-lg hover:bg-cyan-400 hover:text-slate-950 transition"
+>
+  Live Demo
+</a>
             </div>
 
           </div>

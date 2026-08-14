@@ -3,7 +3,6 @@
   class="..."
   data-aos="zoom-in"
 >
-  >
     <!-- Project Image -->
     <img
       :src="project.image"
@@ -21,7 +20,19 @@
       <p class="text-slate-400 leading-7 mb-6">
         {{ project.description }}
       </p>
-
+<!-- Project Status -->
+<div class="mb-4">
+  <span
+    class="px-3 py-1 rounded-full text-sm"
+    :class="
+      project.status === 'Completed'
+        ? 'bg-green-500/20 text-green-400'
+        : 'bg-yellow-500/20 text-yellow-400'
+    "
+  >
+    {{ project.status }}
+  </span>
+</div>
       <!-- Technologies -->
       <div class="flex flex-wrap gap-2 mb-6">
 
