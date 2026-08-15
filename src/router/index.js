@@ -7,7 +7,14 @@ import ProjectsView from "../views/ProjectsView.vue"
 import ContactView from "../views/ContactView.vue"
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory("/ahsan-portfolio/"),
+
+  scrollBehavior() {
+    return {
+      top: 0,
+      left: 0
+    }
+  },
 
   routes: [
     {
